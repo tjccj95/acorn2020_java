@@ -1,4 +1,18 @@
 package test.main;
+/*
+ * [접근지정자]
+ * 클래스, 필드, 메소드에 작성한다.
+ * 
+ * 1. public
+ *  - 어디에서나 자유롭게 접근 가능
+ *  
+ * 2. default(접근 지정자를 작성하지 않은 경우)
+ * 	- 동일한 package 내에서만 접근 가능
+ *  - package가 다르면 import도 불가능하다
+ *  
+ * 3. private
+ * 4. protect
+ */
 
 import test.mypac.Marine;
 import java.io.*;
@@ -9,7 +23,7 @@ public class MainClass07 {
 		/*
 		 * Marine 객체를 생성해서 참조값을 m1이라는 지역 변수에 담아보세요
 		 */
-		int a = 0;
+
 		Marine m1=new Marine();
 		m1.move();
 		m1.attack();

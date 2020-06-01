@@ -23,5 +23,7 @@ public class test2 {
 		}else if(c=="%") {
 			System.out.println(a + "%" + b + "=" + (a%b));
 		}
+		System.out.print("계속하시겠습니까? y/n");
+		
 	}
 }

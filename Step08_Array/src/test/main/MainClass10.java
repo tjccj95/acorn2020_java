@@ -23,7 +23,7 @@ public class MainClass10 {
 		String[] list = {"cherry", "apple", "banana", "melon", "7"};
 		int coin = 0;
 		int sco = 0;
-		int yon = 0 ;
+		String yon = "" ;
 		int[] num = new int[3];
 
 		while(coin<11) {
@@ -51,23 +51,23 @@ public class MainClass10 {
 				System.out.println("0점 입니다.");
 			}
 			System.out.println("총 점수 : " + sco);
-			System.out.print("다시하시겠습니까?(Enter : yes q : no) : ");
-			yon = Integer.parseInt(in.readLine());
-			if(yon == 2) {
+			System.out.print("다시하시겠습니까?(1 : yes 2 : no) : ");
+			yon = in.readLine();
+			if(yon == "2") {
 			System.out.println("=========게임이 종료됩니다!==========");
 			coin += 11;
 			}
 			System.out.println("============다시도전!==============");
-			if(yon != 1 && yon != 2) {
+			if(yon != "1" && yon != "2") {
 				System.out.println("========잘못입력하셨습니다.========");
-				while(yon != 1 | yon !=2) {
-					System.out.print("다시하시겠습니까?(enter :yes q:no) : ");
-					yon = Integer.parseInt(in.readLine());
-					if(yon == 1) {
+				while(yon != "1" | yon !="2") {
+					System.out.print("다시하시겠습니까?(1 :yes 2:no) : ");
+					yon = in.readLine();
+					if(yon == "1") {
 						System.out.println("============다시도전!==============");
 						break;
 					}
-					if(yon == 2) {
+					if(yon == "2") {
 						System.out.println("=========게임이 종료됩니다!==========");
 						coin +=11;
 						break;
